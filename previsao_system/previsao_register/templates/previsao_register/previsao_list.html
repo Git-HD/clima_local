@@ -1,0 +1,23 @@
+{% extends "previsao_register/base.html" %}
+
+{% block content %}
+<h1>Climas registrados</h1>
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Nome da Cidade</td>
+            <td>Descrição</td>
+            <td>Temperatura</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for previsao in previsao_list %}
+            <tr>
+                <td>{{previsao.name}}</td>
+                <td>{{previsao.description}}</td>
+                <td>{{previsao.temperature}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

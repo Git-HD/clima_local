@@ -1,0 +1,42 @@
+{% extends "previsao_register/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.name|as_crispy_field}}
+    {{form.description|as_crispy_field}}
+    {{form.temperature|as_crispy_field}}
+    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Salvar</button>
+</form>
+<script>
+    function getCookie(name) {
+
+
+  function check_cookie_name(name) 
+    {
+      var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+      if (match) {
+        return match[2]
+      }
+      else{
+           console.log('--something went wrong---');
+      }
+   }
+   check_cookie_name('temperatura')
+
+   var pais = check_cookie_name('nome');
+
+   var descricao = check_cookie_name('pais');
+   console.log(descricao);
+
+   var temperatura = check_cookie_name('temperatura');
+
+  document.getElementById('id_name').value = pais;
+  document.getElementById('id_description').value = descricao;
+  document.getElementById('id_temperature').value = temperatura;
+
+}
+getCookie()
+</script>
+{% endblock content %}
