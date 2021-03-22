@@ -1,0 +1,19 @@
+{% extends "previsao_register/base.html" %}
+
+{% block content %}
+<h1>Histórico de pesquisa</h1>
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Nomes das Cidades pesquisadas: </td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for historico in previsao_history %}
+            <tr>
+                <td style="font-size: 15px;">{{historico.cidade}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
