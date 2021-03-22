@@ -28,6 +28,8 @@ DATABASES = {
 
 ---
 
+##Teste de requisições feitas pelo insominia
+
 ##Fluxo do sistema
 
 - pesquisar cidades na página inicial com a openweatherAPI
