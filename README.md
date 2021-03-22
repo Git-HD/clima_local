@@ -30,7 +30,7 @@ DATABASES = {
 
 ##Teste de requisições feitas pelo insominia
 
-##Fluxo do sistema
+##Fluxo do sistema (É necessário estar rodando o servidor no localmente para o django e o react)
 
 - pesquisar cidades na página inicial com a openweatherAPI
 - o nome deve ser válido
