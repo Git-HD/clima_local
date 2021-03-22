@@ -2,7 +2,7 @@
 
 Version 1.0.0
 
-Sistema usando django e react junto com a a api openweathermap.
+Sistema usando django, djangorestframework e react junto com a a api openweathermap.
 
 
 ---
