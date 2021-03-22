@@ -32,8 +32,10 @@ DATABASES = {
 
 - pesquisar cidades na página inicial com a openweatherAPI
 - o nome deve ser válido
-- adicionar pesquisa no banco de dados
-- em "listar registros" verificar pesquisas criadas
+Na navigation bar:
+- Adicionar informações da api no banco de dados (Cadastrar)
+- Verificar registros (Lista de registros)
+- Histórico de pesquisa (Histórico)
 
 ---
 
