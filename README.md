@@ -9,7 +9,7 @@ Sistema usando django, djangorestframework e react junto com a a api openweather
 
 ##Instalação
 
-- npm install
+- npm install (previsao-front)
 - criar bando de dados postgres local e adicionar configurações no settings.py:
 
 DATABASES = {
